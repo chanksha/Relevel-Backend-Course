@@ -1,5 +1,9 @@
 //-----------------------------------------negative to the end---------------------------------------------------------
+// Requirements: "Practice Problem-2:
+// Move all negative numbers to the end and positive to the beginning of the array without using any predefined sorting method
 
+// An array contains both positive and negative numbers in random order. Rearrange the array elements so that all positive numbers appear before all negative numbers.
+// "
 
 
 let brr = [-5, 3,-4,88,-9,-10,21,5,6];
