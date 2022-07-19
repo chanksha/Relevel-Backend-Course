@@ -6,9 +6,9 @@ let a = [[19,28,37],
          [73,82,91]]
 function searchElement(element,array) {
     let count = 0; let flag = false;
-    for(let i = 0; i < array.length; i++) {
-        if(element < array[i][array[i].length-1]) {
-            if(element > array[i][count]) {
+    for(let i = 0; i <= array.length-1; i++) {
+        if(element <= array[i][array[i].length-1]) {
+            while(element>array[i][count]) {
                 count++;
             }
             if(element == array[i][count]) {
@@ -16,9 +16,10 @@ function searchElement(element,array) {
                 console.log(`Element found in array ${[i,count]}`);
             }
         }
+        else continue;
 
     }
     if(flag == false) console.log("Element not found in Array.");
 
 }
-searchElement(21,a);
+searchElement(73,a);
